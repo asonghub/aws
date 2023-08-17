@@ -9,9 +9,9 @@ const mysql = require('mysql');
 
 //mysql 연결
 const conn = mysql.createConnection({
-    host: 'localhost',
-    user: '0807',
-    password: 'mawoss3223',
+    host: 'db-aws-asong-kdt9.coo95bktwkjx.ap-southeast-2.rds.amazonaws.com',
+    user: 'admin',
+    password: '12345678',
     database: 'kdt9',
     //port : 3306,
 });
