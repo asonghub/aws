@@ -14,8 +14,8 @@ exports.getVisitors = (req,res) =>{ //방명록 전체 가져오기
     //select * from visitor
     models.Visitor.findAll().then( result =>{
         console.log('findAll',result)
-        // res.render('visitor',{ data: result}); //렌더링 하는것. ejs를 렌더링 어떤걸 랜더링 할지 지정, 그리고 그 ejs안에 데이터를 넣음. 객체형태로 그래서 ejs안에서 데이터 접근 가능
-        res.send({ hahah: result}) //send는 데이터만 보낼때 사용. 
+        res.render('visitor',{ data: result}); //렌더링 하는것. ejs를 렌더링 어떤걸 랜더링 할지 지정, 그리고 그 ejs안에 데이터를 넣음. 객체형태로 그래서 ejs안에서 데이터 접근 가능
+        // res.send({ hahah: result}) //send는 데이터만 보낼때 사용. 
     });
 };
 
